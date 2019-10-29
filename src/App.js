@@ -5,7 +5,7 @@ import './App.scss';
 
 const App = props => {
   return (
-    <div className='App'>git
+    <div className='App'>
       <Counter />
     </div>
   );
