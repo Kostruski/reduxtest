@@ -1,3 +1,0 @@
-export const CHANGE_VALUE = 'CHANGE_VALUE';
-export const  CHANGE_DIRECTION = 'CHANGE_DIRECTION';
-export const  CHANGE_TEXT = 'CHANGE_TEXT'
