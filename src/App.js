@@ -1,11 +1,12 @@
 import React from 'react';
+
+import Counter from './components/Counter';
 import './App.scss';
 
-
-const App = () => {
+const App = props => {
   return (
-    <div class Name='App'>
-      <p>zaczynamy</p>
+    <div className='App'>
+      <Counter />
     </div>
   );
 };
