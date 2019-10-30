@@ -5,10 +5,10 @@ const addValue = num => {
   };
 };
 
-const addDupaText= () => {
+const addDupaText = () => {
   return {
     type: 'ADD_TEXT',
-    payload: 'dupa'
+    payload: 'dupa',
   };
 };
 
@@ -20,17 +20,15 @@ export const addValueWithThunk = num => {
   };
 };
 
-export const addTextWithThunk = (num) => {
+export const addTextWithThunk = num => {
   return (dispatch, getState) => {
-    const {counter} = getState();
+    const { counter } = getState();
 
     if (counter === 4) {
       dispatch(addDupaText());
-      dispatch(addValue(-1*counter))
+      dispatch(addValue(-1 * counter));
+    } else {
+      dispatch(addValue(num));
     }
-    else {
-      dispatch(addValue(num))
-    }
-
-  }
-}
+  };
+};
